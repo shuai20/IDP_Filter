@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <p>Welcome, {{ user.username }}!</p>
+    <form action="{{ url_for('dashboard') }}" method="post">
+        <label for="sensitive_words">Sensitive words:</label><br>
+        <textarea name="sensitive_words" rows="4" cols="50">{{ user.sensitive_words }}</textarea><br>
+        <label for="non_sensitive_words">Non-sensitive words:</label><br>
+        <textarea name="non_sensitive_words" rows="4" cols="50">{{ user.non_sensitive_words }}</textarea><br>
+        <input type="submit" value="Update">
+    </form>
+    <form action="{{ url_for('filter_text') }}" method="post">
+    <label for="input_text">Input text:</label><br>
+    <textarea name="input_text" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Filter text">
+    </form>
+    <!-- 显示过滤后的文本 -->
+    {% if input_text %}
+    <h2>Filtered text</h2>
+        <p>Using regex: {{ filtered_text_regex }}</p>
+        <p>Using Flashtext: {{ filtered_text_flashtext }}</p>
+        <p>Using NLP: {{ filtered_text_nlp }}</p>
+    {% endif %}
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+    <p><a href="{{ url_for('index') }}">Back to home</a></p>
+</body>
+</html>
