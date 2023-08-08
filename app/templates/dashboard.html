@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Dashboard</h1>
+
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul>
@@ -16,26 +17,45 @@
             </ul>
         {% endif %}
     {% endwith %}
+
     <p>Welcome, {{ user.username }}!</p>
+
+
     <form action="{{ url_for('dashboard') }}" method="post">
         <label for="sensitive_words">Sensitive words:</label><br>
         <textarea name="sensitive_words" rows="4" cols="50">{{ user.sensitive_words }}</textarea><br>
+
         <label for="non_sensitive_words">Non-sensitive words:</label><br>
         <textarea name="non_sensitive_words" rows="4" cols="50">{{ user.non_sensitive_words }}</textarea><br>
-        <input type="submit" value="Update">
+
+        <input type="submit" value="Update Words">
+
     </form>
+
     <form action="{{ url_for('filter_text') }}" method="post">
     <label for="input_text">Input text:</label><br>
-    <textarea name="input_text" rows="4" cols="50"></textarea><br>
+    <textarea name="text" rows="4" cols="50"></textarea><br>
+        <label>Filters:</label><br>
+    <input type="checkbox" name="categories[]" value="name" {{ 'checked' if user.name_filter }}>Name<br>
+    <input type="checkbox" name="categories[]" value="number" {{ 'checked' if user.number_filter }}>Number<br>
+    <input type="checkbox" name="categories[]" value="link" {{ 'checked' if user.link_filter }}>Link<br>
+    <input type="checkbox" name="categories" value="country" {{ 'checked' if user.country_filter }}>Country<br>
+    <input type="checkbox" name="categories[]" value="medicine" {{ 'checked' if user.medicine_filter }}>Medicine<br>
+    <input type="checkbox" name="categories[]" value="streets" {{ 'checked' if user.streets_filter }}>Streets<br>
+
     <input type="submit" value="Filter text">
     </form>
-    <!-- 显示过滤后的文本 -->
-    {% if input_text %}
-    <h2>Filtered text</h2>
-        <p>Using regex: {{ filtered_text_regex }}</p>
-        <p>Using Flashtext: {{ filtered_text_flashtext }}</p>
-        <p>Using NLP: {{ filtered_text_nlp }}</p>
+
+
+
+
+
+    <!-- Display filtered text -->
+    {% if filtered_text %}
+        <h2>Filtered text</h2>
+        <p>{{ filtered_text }}</p>
     {% endif %}
+
     <p><a href="{{ url_for('logout') }}">Logout</a></p>
     <p><a href="{{ url_for('index') }}">Back to home</a></p>
 </body>

@@ -1,36 +1,47 @@
+import os
+import csv
 import re
-from flashtext import KeywordProcessor
-import spacy
-
-nlp = spacy.load("en_core_web_sm")
-
-sensitive_words_db = ["example1", "example2", "example3"]
-
-EMAIL_REGEX = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-URL_REGEX = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
 
 
-def filter_text_with_regex(input_text, sensitive_words):
-    filtered_text = input_text
-    for word in sensitive_words:
-        filtered_text = re.sub(r'\b' + re.escape(word) + r'\b', '**Filtered**', filtered_text)
-    filtered_text = re.sub(EMAIL_REGEX, '**Filtered Email**', filtered_text)
-    filtered_text = re.sub(URL_REGEX, '**Filtered URL**', filtered_text)
-    return filtered_text
+class IDPFilter:
+    # 初始化IDPFilter对象时定义数据集路径
+    DATASET_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'datasets')
 
+    def load_csv(self, filename):
+        filepath = os.path.join(self.DATASET_PATH, filename + '.csv')
+        if not os.path.exists(filepath):
+            print(f"Warning: File {filepath} does not exist.")
+            return []
 
-def filter_text_with_flashtext(input_text, sensitive_words):
-    keyword_processor = KeywordProcessor()
-    for word in sensitive_words:
-        keyword_processor.add_keyword(word, '**Filtered**')
-    filtered_text = keyword_processor.replace_keywords(input_text)
-    return filtered_text
+        with open(filepath, 'r') as file:
+            reader = csv.reader(file)
+            return [row[0].strip() for row in reader if row]
 
+    def filter_text(self, input_text, user_sensitive_words, user_non_sensitive_words, categories):
+        """基于用户指定的敏感词、非敏感词和类别来过滤文本"""
 
-def filter_text_with_nlp(input_text, sensitive_words):
-    filtered_text = input_text
-    doc = nlp(input_text)
-    for ent in doc.ents:
-        if ent.label_ in ["GPE", "ORG"]:
-            filtered_text = filtered_text.replace(ent.text, '**Filtered**')
-    return filtered_text
+        all_sensitive_words = set()
+
+        # 如果用户选择了类别，加载相应类别的CSV文件
+        if categories:
+            for category in categories:
+                filename = category + ".csv"
+                all_sensitive_words.update(self.load_csv(category))
+
+        # 加入用户自定义的敏感词
+
+        all_sensitive_words.update(user_sensitive_words)
+
+        # 移除用户定义的非敏感词
+        all_sensitive_words.difference_update(user_non_sensitive_words)
+
+        # 为了确保过滤不受标点符号的影响，我们可以用正则表达式替代split()方法
+        import re
+        words = re.findall(r'\b\w+\b', input_text)
+
+        for index, word in enumerate(words):
+            if word in all_sensitive_words:
+                input_text = input_text.replace(word, '*' * len(word))
+
+        print(all_sensitive_words)
+        return input_text

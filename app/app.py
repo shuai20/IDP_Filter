@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 import hashlib
-import re
-from flashtext import KeywordProcessor
-import spacy
-from IDP_filter import filter_text_with_regex, filter_text_with_flashtext, filter_text_with_nlp
+from IDP_filter import IDPFilter
+idp_filter = IDPFilter()
 
 
 
@@ -19,12 +17,18 @@ class User(db.Model):
     password = db.Column(db.String(120), nullable=False)
     sensitive_words = db.Column(db.String, nullable=True)
     non_sensitive_words = db.Column(db.String, nullable=True)
-
-
+    name_filter = db.Column(db.Boolean, default=False)
+    number_filter = db.Column(db.Boolean, default=False)
+    link_filter = db.Column(db.Boolean, default=False)
+    country_filter = db.Column(db.Boolean, default=False)
+    medicine_filter = db.Column(db.Boolean, default=False)
+    streets_filter = db.Column(db.Boolean, default=False)
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -71,17 +75,45 @@ def dashboard():
     user = User.query.get(session['user_id'])
 
     if request.method == 'POST':
-        sensitive_words = ' '.join(request.form['sensitive_words'].split())
-        non_sensitive_words = ' '.join(request.form['non_sensitive_words'].split())
+        sensitive_words = request.form['sensitive_words']
+        non_sensitive_words = request.form['non_sensitive_words']
 
-        # sensitive_words = request.form['sensitive_words']
-        # non_sensitive_words = request.form['non_sensitive_words']
         user.sensitive_words = sensitive_words
         user.non_sensitive_words = non_sensitive_words
         db.session.commit()
         flash('Words updated successfully.')
+        user.name_filter = 'name_filter' in request.form
+        print(user.name_filter)
+        user.number_filter = 'number_filter' in request.form
+        user.link_filter = 'link_filter' in request.form
+        user.country_filter = 'country_filter' in request.form
+        user.medicine_filter = 'medicine_filter' in request.form
+        user.streets_filter = 'streets_filter' in request.form
+
+        db.session.commit()
+        flash('Settings updated successfully.')
 
     return render_template('dashboard.html', user=user)
+
+@app.route('/filter_text', methods=['GET', 'POST'])
+def filter_text():
+    if 'user_id' not in session:
+        flash('Please log in to access this page.')
+        return redirect(url_for('login'))
+
+    user = User.query.get(session['user_id'])
+    filtered_text = None
+
+    if request.method == 'POST':
+        input_text = request.form.get('text')
+        sensitive_words = [word.strip() for word in user.sensitive_words.split(',')]
+        non_sensitive_words = [word.strip() for word in user.non_sensitive_words.split(',')]
+
+        selected_categories = request.form.getlist('categories') if request.form.getlist('categories') else None
+        print("Selected Categories:", selected_categories)
+        filtered_text = idp_filter.filter_text(input_text, sensitive_words, non_sensitive_words, selected_categories)
+
+    return render_template('dashboard.html', user=user, filtered_text=filtered_text)
 
 @app.route('/logout')
 def logout():
@@ -89,39 +121,8 @@ def logout():
     flash('Logged out successfully.')
     return redirect(url_for('index'))
 
-nlp = spacy.load("en_core_web_sm")
 
-# 创建一个敏感词数据库（这里只是一个示例，你可以根据需要添加更多词汇）
-sensitive_word_db = ["China", "India", "United States"]
 
-# 预先编译正则表达式
-email_regex = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
-url_regex = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
-
-# 添加一个新的路由处理过滤文本
-@app.route('/filter_text', methods=['POST'])
-def filter_text():
-    if 'user_id' not in session:
-        flash('Please log in to access the text filtering feature.')
-        return redirect(url_for('login'))
-
-    user = User.query.get(session['user_id'])
-    input_text = request.form['input_text']
-
-    # 获取用户自定义敏感词
-    user_sensitive_words = user.sensitive_words.split()
-
-    # 合并用户自定义敏感词和敏感词数据库
-    all_sensitive_words = user_sensitive_words + sensitive_word_db
-
-    filtered_text_regex = filter_text_with_regex(input_text, all_sensitive_words)
-    filtered_text_flashtext = filter_text_with_flashtext(input_text, all_sensitive_words)
-    filtered_text_nlp = filter_text_with_nlp(input_text, all_sensitive_words)
-
-    return render_template('dashboard.html', user=user, input_text=input_text,
-                           filtered_text_regex=filtered_text_regex,
-                           filtered_text_flashtext=filtered_text_flashtext,
-                           filtered_text_nlp=filtered_text_nlp)
 
 
 if __name__ == '__main__':
