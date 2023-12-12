@@ -54,6 +54,8 @@
     {% if filtered_text %}
         <h2>Filtered text</h2>
         <p>{{ filtered_text }}</p>
+        <h3>IDP Report</h3>
+        <p>Number of filtered words: {{ filtered_count }}</p>
     {% endif %}
 
     <p><a href="{{ url_for('logout') }}">Logout</a></p>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            background-color: #ffdbdb;
+            padding: 10px;
+            border-radius: 5px;
+            color: #d9534f;
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <p>Welcome, {{ user.username }}!</p>
+
+    <form action="{{ url_for('dashboard') }}" method="post">
+        <label for="self_regarding_blacklist">Self-Regarding Blacklist (SRB): <small>(must be verified)</small></label><br>
+        <textarea name="self_regarding_blacklist" rows="4">{{ user.self_regarding_blacklist }}</textarea><br>
+
+        <label for="self_regarding_whitelist">Self-Regarding Whitelist (SRW): <small>(must be verified)</small></label><br>
+        <textarea name="self_regarding_whitelist" rows="4">{{ user.self_regarding_whitelist }}</textarea><br>
+
+        <label for="others_regarding_blacklist">Others Regarding Blacklist (ORB):</label><br>
+        <textarea name="others_regarding_blacklist" rows="4">{{ user.others_regarding_blacklist }}</textarea><br>
+
+
+
+
+
+        <input type="submit" value="Update Words">
+    </form>
+
+    <form action="{{ url_for('filter_text') }}" method="post">
+        <label for="input_text">Input text:</label><br>
+        <textarea name="text" rows="4"></textarea><br>
+        <label>Filters:</label><br>
+        <input type="checkbox" name="categories" value="name" {{ 'checked' if user.name_filter }}>Name<br>
+        <input type="checkbox" name="categories" value="number" {{ 'checked' if user.number_filter }}>Number<br>
+        <input type="checkbox" name="categories" value="link" {{ 'checked' if user.link_filter }}>Link<br>
+        <input type="checkbox" name="categories" value="country" {{ 'checked' if user.country_filter }}>country<br>
+        <input type="checkbox" name="categories" value="medicine" {{ 'checked' if user.medicine_filter }}>Medicine<br>
+        <input type="checkbox" name="categories" value="streets" {{ 'checked' if user.streets_filter }}>Streets<br>
+
+        <input type="submit" value="Filter text">
+    </form>
+
+    <!-- Display filtered text -->
+    {% if filtered_text %}
+        <h2>Filtered text</h2>
+        <p>{{ filtered_text }}</p>
+        <h3>IDP Report</h3>
+        <p>Number of filtered words: {{ filtered_count }}</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+    <p><a href="{{ url_for('index') }}">Back to home</a></p>
+</body>
+</html>

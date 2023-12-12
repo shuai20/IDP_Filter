@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="">
-      <change afterPath="F:/IDP mitigation/datasets/country.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/datasets/disease.csv" afterDir="false" />
+    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="8-9new version">
+      <change afterPath="F:/IDP mitigation/app/templates/Newdashboard.html" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/streets.csv" afterDir="false" />
       <change beforePath="F:/IDP mitigation/.idea/workspace.xml" beforeDir="false" afterPath="F:/IDP mitigation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="F:/IDP mitigation/IDP_filter.py" beforeDir="false" afterPath="F:/IDP mitigation/IDP_filter.py" afterDir="false" />
       <change beforePath="F:/IDP mitigation/app/app.py" beforeDir="false" afterPath="F:/IDP mitigation/app/app.py" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/app/instance/database.db" beforeDir="false" />
       <change beforePath="F:/IDP mitigation/app/templates/dashboard.html" beforeDir="false" afterPath="F:/IDP mitigation/app/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,14 +17,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="F:/IDP mitigation" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2ON3g2LqNOCVjORXe1305d3hfY6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,9 +35,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="F:/IDP mitigation/datasets" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IDP mitigation\datasets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\IDP mitigation\" />
       <recent name="F:\IDP mitigation\app\templates" />
@@ -104,6 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1681387320366</updated>
     </task>
+    <task id="LOCAL-00001" summary="8-9new version">
+      <created>1691538519365</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691538519365</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -127,5 +137,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="8-9new version" />
+    <option name="LAST_COMMIT_MESSAGE" value="8-9new version" />
   </component>
 </project>
