@@ -1,9 +1,9 @@
-# IDPAPImitigation
+# IDP_Filter
 ## IDP Text Filter Program
 
 ### Introduction
 
-This program provides a text filtering solution that can identify and mask sensitive information based on user-defined and preset categories. The system uses a web-based interface, powered by Flask, and is backed by a SQLite database.
+This project is designed to solve the widespread interdependence privacy issues of third-party applications. Up to now, the design and deployment of protection measures to protect interdependent privacy are restricted by many factors: 1. From a legal perspective, GDPR does not put forward specific requirements for the management of interdependent privacy data, so application developers and application platforms lack sufficient excitation. 2. In terms of actual deployment, there is a lack of unified standards for the management of interdependent data. Improper handling will affect the user experience.
 
 ### Features
 

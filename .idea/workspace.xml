@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="8-9new version">
-      <change afterPath="F:/IDP mitigation/app/templates/Newdashboard.html" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/datasets/streets.csv" afterDir="false" />
+    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="12-12 new streets dataset. sperate Orb, Srb, Srw.">
       <change beforePath="F:/IDP mitigation/.idea/workspace.xml" beforeDir="false" afterPath="F:/IDP mitigation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/IDP_filter.py" beforeDir="false" afterPath="F:/IDP mitigation/IDP_filter.py" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/app/app.py" beforeDir="false" afterPath="F:/IDP mitigation/app/app.py" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/app/templates/dashboard.html" beforeDir="false" afterPath="F:/IDP mitigation/app/templates/dashboard.html" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/README.md" beforeDir="false" afterPath="F:/IDP mitigation/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="F:/IDP mitigation" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="F:/IDP mitigation" />
   </component>
   <component name="ProjectId" id="2ON3g2LqNOCVjORXe1305d3hfY6" />
@@ -113,10 +114,18 @@
       <option name="project" value="LOCAL" />
       <updated>1691538519365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="12-12 new streets dataset. sperate Orb, Srb, Srw.">
+      <created>1702390466388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702390466388</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
     <option name="COLUMN_ID_ORDER">
       <list>
         <option value="Default.Root" />
@@ -140,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="8-9new version" />
-    <option name="LAST_COMMIT_MESSAGE" value="8-9new version" />
+    <MESSAGE value="12-12 new streets dataset. sperate Orb, Srb, Srw." />
+    <option name="LAST_COMMIT_MESSAGE" value="12-12 new streets dataset. sperate Orb, Srb, Srw." />
   </component>
 </project>
