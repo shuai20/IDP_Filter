@@ -34,7 +34,7 @@ class User(db.Model):
     number_filter = db.Column(db.Boolean, default=False)
     link_filter = db.Column(db.Boolean, default=False)
     country_filter = db.Column(db.Boolean, default=False)
-    medicine_filter = db.Column(db.Boolean, default=False)
+    disease_filter = db.Column(db.Boolean, default=False)
     streets_filter = db.Column(db.Boolean, default=False)
     self_regarding_blacklist = db.Column(db.String, nullable=True)  # SRB
     self_regarding_whitelist = db.Column(db.String, nullable=True)  # SRW
@@ -105,7 +105,7 @@ def dashboard():
         user.number_filter = 'number_filter' in request.form
         user.link_filter = 'link_filter' in request.form
         user.country_filter = 'country_filter' in request.form
-        user.medicine_filter = 'medicine_filter' in request.form
+        user.disease_filter = 'disease_filter' in request.form
         user.streets_filter = 'streets_filter' in request.form
 
 
@@ -136,6 +136,9 @@ def filter_text():
  #       non_sensitive_words = [word.strip() for word in user.non_sensitive_words.split(',')]
 
         selected_categories = request.form.getlist('categories') if request.form.getlist('categories') else None
+
+
+
         print("Selected Categories:", selected_categories)
         filtered_text, filtered_count = idp_filter.filter_text(input_text, user_orb, user_srw, global_srb,
                                                                selected_categories)
