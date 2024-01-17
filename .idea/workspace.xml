@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="12-12 new streets dataset. sperate Orb, Srb, Srw.">
+    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="New readme and name">
+      <change afterPath="F:/IDP mitigation/Performance_test/Frequency_sentencelength.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/Generate_test_sentence2.0.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords1.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords10.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords2.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords3.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords4.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords5.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords6.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords7.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords8.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords9.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/InitializationTime.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/InitializationTime2.0.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLRtest.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/Temp1.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/TestIDP2.0.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/generate_test_sentences.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/test_idp_filter.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/trymeaningfulsentences.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Zoomstat.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name.csv" afterDir="false" />
       <change beforePath="F:/IDP mitigation/.idea/workspace.xml" beforeDir="false" afterPath="F:/IDP mitigation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/README.md" beforeDir="false" afterPath="F:/IDP mitigation/README.md" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/IDP_filter.py" beforeDir="false" afterPath="F:/IDP mitigation/IDP_filter.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/app/app.py" beforeDir="false" afterPath="F:/IDP mitigation/app/app.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/app/templates/Newdashboard.html" beforeDir="false" afterPath="F:/IDP mitigation/app/templates/Newdashboard.html" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/datasets/disease.csv" beforeDir="false" afterPath="F:/IDP mitigation/datasets/disease.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -36,20 +64,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="F:/IDP mitigation/datasets" />
+    <property name="last_opened_file_path" value="F:/IDP mitigation/Performance_test" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IDP mitigation\Performance_test" />
       <recent name="F:\IDP mitigation\datasets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IDP mitigation\Performance_test" />
+      <recent name="F:\IDP mitigation\datasets" />
       <recent name="F:\IDP mitigation\" />
       <recent name="F:\IDP mitigation\app\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
-    <configuration name="IDP_filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.TestIDP2.0">
+    <configuration name="Generate_test_sentence2.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\IDP mitigation\IDP_filter.py" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/Generate_test_sentence2.0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="InitializationTime (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +109,74 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/app" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:/IDP mitigation/app/app.py" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/InitializationTime.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NLRtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IDP mitigation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/NLRtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIDP2.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IDP mitigation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/TestIDP2.0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_idp_filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IDP mitigation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/test_idp_filter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,8 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.IDP_filter" />
+        <item itemvalue="Python.TestIDP2.0" />
+        <item itemvalue="Python.NLRtest" />
+        <item itemvalue="Python.InitializationTime (1)" />
+        <item itemvalue="Python.test_idp_filter" />
+        <item itemvalue="Python.Generate_test_sentence2.0" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702390466388</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New readme and name">
+      <created>1703197850025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703197850025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -150,6 +254,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="8-9new version" />
     <MESSAGE value="12-12 new streets dataset. sperate Orb, Srb, Srw." />
-    <option name="LAST_COMMIT_MESSAGE" value="12-12 new streets dataset. sperate Orb, Srb, Srw." />
+    <MESSAGE value="New readme and name" />
+    <option name="LAST_COMMIT_MESSAGE" value="New readme and name" />
   </component>
 </project>

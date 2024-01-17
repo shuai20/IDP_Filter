@@ -104,12 +104,12 @@
     <form action="{{ url_for('filter_text') }}" method="post">
         <label for="input_text">Input text:</label><br>
         <textarea name="text" rows="4"></textarea><br>
-        <label>Filters:</label><br>
+        <label>Filters(ORB):</label><br>
         <input type="checkbox" name="categories" value="name" {{ 'checked' if user.name_filter }}>Name<br>
         <input type="checkbox" name="categories" value="number" {{ 'checked' if user.number_filter }}>Number<br>
         <input type="checkbox" name="categories" value="link" {{ 'checked' if user.link_filter }}>Link<br>
-        <input type="checkbox" name="categories" value="country" {{ 'checked' if user.country_filter }}>country<br>
-        <input type="checkbox" name="categories" value="medicine" {{ 'checked' if user.medicine_filter }}>Medicine<br>
+        <input type="checkbox" name="categories" value="country" {{ 'checked' if user.country_filter }}>Country<br>
+        <input type="checkbox" name="categories" value="disease" {{ 'checked' if user.medicine_filter }}>Disease<br>
         <input type="checkbox" name="categories" value="streets" {{ 'checked' if user.streets_filter }}>Streets<br>
 
         <input type="submit" value="Filter text">
