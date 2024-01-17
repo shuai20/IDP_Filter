@@ -4,34 +4,18 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="New readme and name">
-      <change afterPath="F:/IDP mitigation/Performance_test/Frequency_sentencelength.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/Generate_test_sentence2.0.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords1.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords10.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords2.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords3.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords4.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords5.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords6.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords7.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords8.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/IDPwords9.csv" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/InitializationTime.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/InitializationTime2.0.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLRtest.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/Temp1.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/TestIDP2.0.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/generate_test_sentences.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/test_idp_filter.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/trymeaningfulsentences.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Zoomstat.py" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/datasets/name.csv" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/.idea/workspace.xml" beforeDir="false" afterPath="F:/IDP mitigation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/IDP_filter.py" beforeDir="false" afterPath="F:/IDP mitigation/IDP_filter.py" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/app/app.py" beforeDir="false" afterPath="F:/IDP mitigation/app/app.py" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/app/templates/Newdashboard.html" beforeDir="false" afterPath="F:/IDP mitigation/app/templates/Newdashboard.html" afterDir="false" />
-      <change beforePath="F:/IDP mitigation/datasets/disease.csv" beforeDir="false" afterPath="F:/IDP mitigation/datasets/disease.csv" afterDir="false" />
+    <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="Test performance">
+      <change afterPath="F:/IDP mitigation/Performance_test/2.0filtered_sentences_1.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_1.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_10.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_2.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_3.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_4.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_5.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_6.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_7.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_8.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_9.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703197850025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test performance">
+      <created>1705510804372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705510804372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -255,6 +246,7 @@
     <MESSAGE value="8-9new version" />
     <MESSAGE value="12-12 new streets dataset. sperate Orb, Srb, Srw." />
     <MESSAGE value="New readme and name" />
-    <option name="LAST_COMMIT_MESSAGE" value="New readme and name" />
+    <MESSAGE value="Test performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test performance" />
   </component>
 </project>
