@@ -1,5 +1,5 @@
 # IDP_Filter
-## Interdependent Privacy(IDP) protection: Text Filter Proof of Concept
+## Interdependent Privacy (IDP) protection: Text Filter Proof of Concept
 
 ### Introduction
 
@@ -9,7 +9,7 @@ This project is designed to solve the widespread interdependent privacy issues o
 
 - User registration and authentication(pbkdf2).
 
-- User-defined Self-Regarding Blacklist(SRB), Self-Regarding Whitelist(SRW) and Others-Regarding Blacklist(ORB).
+- User-defined Self-Regarding Blacklist (SRB), Self-Regarding Whitelist (SRW) and Others-Regarding Blacklist (ORB).
 - Predefined categories for Blacklist:
   - Names
   - Numbers
@@ -17,10 +17,10 @@ This project is designed to solve the widespread interdependent privacy issues o
   - Countries
   - Diseases
   - Streets
-- Report of filtered result(number of IDP-related words) 
+- Report of filtered result (number of IDP-related words) 
 - User interface demo
 - Accuracy analysis compared with SpaCy NER
-- Efficiency analysis among different text filter methods(RE, KMP and FlashText)
+- Efficiency analysis among different text filter methods (RE, KMP and FlashText)
 
 ### Setup
 
