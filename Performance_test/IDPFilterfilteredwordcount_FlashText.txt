@@ -1,0 +1,28 @@
+G:\anaconda\python.exe "F:/IDP mitigation/Performance_test/TestIDPFilter_name800_filteredwords.py"
+Total filtered words in File 1: 2967
+Total filtered words in File 2: 2816
+Total filtered words in File 3: 2929
+Total filtered words in File 4: 2957
+Total filtered words in File 5: 2796
+Total filtered words in File 6: 2808
+Total filtered words in File 7: 2837
+Total filtered words in File 8: 2761
+Total filtered words in File 9: 2800
+Total filtered words in File 10: 2846
+
+Process finished with exit code 0
+
+Case sensitive:::::::::::::::::::::::::::::::::::::::
+G:\anaconda\python.exe "F:/IDP mitigation/Performance_test/TestIDPFilter_name800_filteredwords.py"
+Total filtered words in File 1: 1455
+Total filtered words in File 2: 1394
+Total filtered words in File 3: 1432
+Total filtered words in File 4: 1424
+Total filtered words in File 5: 1390
+Total filtered words in File 6: 1241
+Total filtered words in File 7: 1394
+Total filtered words in File 8: 1360
+Total filtered words in File 9: 1304
+Total filtered words in File 10: 1364
+
+Process finished with exit code 0

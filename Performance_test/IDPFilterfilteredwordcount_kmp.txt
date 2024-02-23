@@ -1,0 +1,13 @@
+G:\anaconda\python.exe "F:/IDP mitigation/Performance_test/TestIDPFilter_name800_filteredwords.py"
+Total filtered words in File 1: 2132
+Total filtered words in File 2: 2033
+Total filtered words in File 3: 2106
+Total filtered words in File 4: 2038
+Total filtered words in File 5: 2071
+Total filtered words in File 6: 1905
+Total filtered words in File 7: 2051
+Total filtered words in File 8: 1967
+Total filtered words in File 9: 1948
+Total filtered words in File 10: 2025
+
+Process finished with exit code 0

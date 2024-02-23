@@ -24,16 +24,19 @@ def plot_loading_times(filepaths):
         cumulative_loading_times.append(total_loading_time)
         print(f"File: {filepath}, Total Words: {total_words_count}, Total Time: {total_loading_time}")
 
-    plt.plot(cumulative_word_counts, cumulative_loading_times, marker='o')
-    plt.xlabel('Cumulative Number of IDPWords')
-    plt.ylabel('Cumulative Loading Time (seconds)')
-    plt.title('Cumulative Loading Time vs Cumulative IDPWord Count')
+    plt.plot(cumulative_word_counts, cumulative_loading_times,  color='black',  marker='o')
+    plt.xlabel('Cumulative Number of Blacklist Words')
+    plt.ylabel('Cumulative Initialization Time (seconds)')
+    plt.title('Cumulative Initialization Time vs Cumulative IDPWord Count')
+
+
+
     plt.show()
 
 
 
 
-# 更新文件路径
+# dont forget to change the filepath
 filepaths = [
     'IDPwords1.csv',
     'IDPwords2.csv',

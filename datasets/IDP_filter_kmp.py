@@ -1,7 +1,6 @@
 import os
 import csv
 import re
-#This IDPFilter is implemented by KMP.
 
 class IDPFilter:
     # Set the dataset path when initializing the IDPFilter object
@@ -80,18 +79,3 @@ class IDPFilter:
                 self.total_filtered_count += 1
 
         return input_text, self.total_filtered_count
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,9 @@
 import csv
 import time
 import matplotlib.pyplot as plt
-from IDP_filter import IDPFilter
+import numpy as np
+#from IDP_filter import IDPFilter
+from IDPFilter_Flashtext_initial import IDPFilter
 
 def load_csv(filepath):
     """Function to load words from a CSV file."""
@@ -23,22 +25,27 @@ def test_loading_times(filepaths, idp_filter):
             user_orb=",".join(words),
             user_srw="",
             global_srb="",
-            categories=["number", "link"]
+         #   categories=["number", "link"]
+            categories=""
+
         )
         end_time = time.time()
         cumulative_duration += (end_time - start_time)
         cumulative_loading_times.append(cumulative_duration)
+        print(cumulative_loading_times)
 
     return cumulative_loading_times
 
 def plot_loading_times(cumulative_loading_times):
     """Function to plot loading times."""
-    plt.plot(range(1, len(cumulative_loading_times) + 1), cumulative_loading_times, marker='o')
-    plt.xlabel('Number of Documents')
-    plt.ylabel('Cumulative Loading Time into IDPFilter ORB (seconds)')
-    plt.title('Cumulative Loading Time vs Document Number')
+    x_axis = np.arange(10000, 110000, 10000)
+    plt.plot(x_axis, cumulative_loading_times, color='black', marker='o')
+    plt.xlabel('Number of Blacklist words', fontsize=12)
+    plt.ylabel('Initialization time (seconds)', fontsize=12)
+    plt.title('Initialization Time vs Blacklist Words')
     plt.grid(False)
-    plt.xticks(range(1, len(cumulative_loading_times) + 1))
+    plt.xticks(x_axis)  # Adjusting the x-ticks for 10 intervals
+    plt.yticks(np.arange(0, max(cumulative_loading_times) + 0.1, 0.05))
     plt.show()
 
 # Instantiate the IDPFilter
@@ -56,6 +63,7 @@ filepaths = [
     'IDPwords8.csv',
     'IDPwords9.csv',
     'IDPwords10.csv'
+
 ]
 
 # Run the loading time test and plot the results

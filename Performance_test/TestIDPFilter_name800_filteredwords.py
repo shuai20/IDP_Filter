@@ -115,7 +115,12 @@
 #     main()
 
 import matplotlib.pyplot as plt
-from IDP_filter import IDPFilter
+#from IDP_filter import IDPFilter
+#kmp
+#from IDPFilter_Flashtext import IDPFilter
+#FlashText
+from IDPFilter_Flashtext_initial import IDPFilter
+#from IDPfilter_RE import IDPFilter
 import time
 
 
@@ -135,10 +140,14 @@ def filter_sentences_and_measure_individual_times(idp_filter, sentences):
     filtered_sentences = []
     word_counts = []
     cumulative_time = 0
+    total_filterd_count = 0
+
 
     for sentence in sentences:
         start_time = time.time()
-        filtered_sentence, count = idp_filter.filter_text(sentence, "", "", "", ['name'])
+        filtered_sentence, count = idp_filter.filter_text(sentence, "", "", "", ['name'])#kmp and RE
+    #    filtered_sentence, count = idp_filter.filter_text(sentence, ['name'])#FlashText
+
         end_time = time.time()
 
         time_taken = end_time - start_time
@@ -146,8 +155,13 @@ def filter_sentences_and_measure_individual_times(idp_filter, sentences):
         times_per_sentence.append(cumulative_time)
         filtered_sentences.append(filtered_sentence)
         word_counts.append(count)
+        total_filterd_count += count
 
-    return filtered_sentences, word_counts, times_per_sentence
+
+
+
+
+    return filtered_sentences, word_counts, times_per_sentence, total_filterd_count
 
 
 def plot_cumulative_times(times_per_sentence, file_number):
@@ -155,7 +169,7 @@ def plot_cumulative_times(times_per_sentence, file_number):
     plt.plot(range(1, len(times_per_sentence) + 1), times_per_sentence, marker='o')
     plt.xlabel('Number of Sentences')
     plt.ylabel('Cumulative Filtering Time (seconds)')
-    plt.title(f'Cumulative Filtering Time for File {file_number}')
+    plt.title(f'Cumulative Filtering Time(IDP words = 400)')
     plt.grid(False)
     plt.xticks(range(0, len(times_per_sentence) + 1, 1000))
     plt.tight_layout()
@@ -167,12 +181,14 @@ def main():
 
     for i in range(1, 11):
         input_filepath = f"sentences_{i}.txt"
-        output_filepath = f"2.0filtered_sentences_{i}.txt"
+        output_filepath = f"RE_filtered_sentences_{i}.txt"
         sentences = read_sentences_from_file(input_filepath)
 
-        filtered_sentences, word_counts, times_per_sentence = filter_sentences_and_measure_individual_times(idp_filter, sentences)
+        filtered_sentences, word_counts, times_per_sentence, total_filtered_count = filter_sentences_and_measure_individual_times(idp_filter, sentences)
         write_filtered_sentences_to_file(output_filepath, filtered_sentences, word_counts)
         plot_cumulative_times(times_per_sentence, i)
+        print(f"Total filtered words in File {i}: {total_filtered_count}")
+        #print(times_per_sentence)
 
 
 if __name__ == "__main__":
