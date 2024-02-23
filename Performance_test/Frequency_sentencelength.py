@@ -21,5 +21,5 @@ def plot_with_params(font_size, font_weight, line_color):
     plt.show()
 
 # Example usage of the function
-plot_with_params(font_size=10, font_weight='bold', line_color='black')
+plot_with_params(font_size=10, font_weight='normal', line_color='black')
 

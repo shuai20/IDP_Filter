@@ -1,28 +1,34 @@
 # IDP_Filter
-## IDP Text Filter Program
+## Interdependent Privacy(IDP) protection: Text Filter Proof of Concept
 
 ### Introduction
 
-This project is designed to solve the widespread interdependence privacy issues of third-party applications. Up to now, the design and deployment of protection measures to protect interdependent privacy are restricted by many factors: 1. From a legal perspective, GDPR does not put forward specific requirements for the management of interdependent privacy data, so application developers and application platforms lack sufficient excitation. 2. In terms of actual deployment, there is a lack of unified standards for the management of interdependent data. Improper handling will affect the user experience.
+This project is designed to solve the widespread interdependent privacy issues of third-party applications. Up to now, the design and deployment of protection measures to protect interdependent privacy are restricted by many factors: 1. From a legal perspective, GDPR does not put forward specific requirements for the management of interdependent privacy data, so application developers and application platforms lack sufficient excitation. 2. In terms of actual deployment, there is a lack of unified standards for the management of interdependent data. Improper handling will affect the user experience.
 
 ### Features
 
-- User registration and authentication.
-- Customizable filters for:
+- User registration and authentication(pbkdf2).
+
+- User-defined Self-Regarding Blacklist(SRB), Self-Regarding Whitelist(SRW) and Others-Regarding Blacklist(ORB).
+- Predefined categories for Blacklist:
   - Names
   - Numbers
   - Links
   - Countries
-  - Medicines
+  - Diseases
   - Streets
-- User-defined sensitive and non-sensitive words.
-- Text input to see the filter in action.
+- Report of filtered result(number of IDP-related words) 
+- User interface demo
+- Accuracy analysis compared with SpaCy NER
+- Efficiency analysis among different text filter methods(RE, KMP and FlashText)
 
 ### Setup
 
 #### Prerequisites
 
-- Python 3
+- Python 3.8
+- re
+- hashlib  
 - Flask
 - Flask-SQLAlchemy
 - SQLite
@@ -45,6 +51,7 @@ This project is designed to solve the widespread interdependence privacy issues 
 
    ```bash
    pip install Flask Flask-SQLAlchemy
+   pip install hashlib
    ```
 
 4. Initialize the SQLite database:
@@ -70,12 +77,9 @@ This project is designed to solve the widespread interdependence privacy issues 
 
 3. Register a new user or login with existing credentials.
 
-4. Once logged in, you'll be directed to the dashboard where:
-   - You can define sensitive and non-sensitive words.
-   - Enable/disable specific filters.
-   - Input text to see the filter in action.
+4. Define SRB, SRW and ORB, choose predefined categories as Blacklists. Update the Filter Settings whenever u want.
 
-5. To view the filtered text, scroll down to the "Filtered Text" section.
+5. Input the text, click filter button, then you can see the filtered result and report about how many words are filtered.
 
 ### Known Issues
 
@@ -91,4 +95,4 @@ This project is licensed under the MIT License.
 
 ### Acknowledgements
 
-Thanks to the OpenAI community for guidance and support during the development of this program.
+

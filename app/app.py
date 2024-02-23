@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 import hashlib
-from IDP_filter import IDPFilter
+from IDPFilter_Flashtext import IDPFilter
+#from IDPFilter_Flashtext_initial import IDPFilter
 import os
 from hashlib import pbkdf2_hmac
 

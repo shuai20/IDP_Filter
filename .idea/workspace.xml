@@ -5,17 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2dadfad8-00cb-4a7e-bec8-e4c49f5f0d51" name="Default Changelist" comment="Test performance">
-      <change afterPath="F:/IDP mitigation/Performance_test/2.0filtered_sentences_1.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_1.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_10.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_2.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_3.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_4.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_5.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_6.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_7.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_8.txt" afterDir="false" />
-      <change afterPath="F:/IDP mitigation/Performance_test/NLPfilteredsentence_9.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/IDPFilter_Flashtext.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/IDPFilter_Flashtext_initial.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/IDPfilter_RE.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Imagemerge/KMP100.png" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Imagemerge/KMP200.png" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Imagemerge/KMP400_2.png" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Imagemerge/Merge_image.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPFilterfilteredwordcount_FlashText.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDPFilterfilteredwordcount_kmp.txt" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/IDP_filter_kmp.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/Sentencetimecostfinal_Flashtext.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/Timecost_kmp.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/Performance_test/name151671.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/app/templates/2.0index.html" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/app/templates/2.0login.html" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/IDP_filter_kmp.py" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name100.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name1000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name10000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name100000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name151671.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name200.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name2000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name20000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name400.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name4000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name40000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name50.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name600.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name6000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name60000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name800.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name8000.csv" afterDir="false" />
+      <change afterPath="F:/IDP mitigation/datasets/name80000.csv" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/.idea/workspace.xml" beforeDir="false" afterPath="F:/IDP mitigation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/IDP_filter.py" beforeDir="false" afterPath="F:/IDP mitigation/IDP_filter.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/2.0filtered_sentences_1.txt" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/2.0filtered_sentences_1.txt" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/Frequency_sentencelength.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/Frequency_sentencelength.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/Generate_test_sentence2.0.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/Generate_test_sentence.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/InitializationTime.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/InitializationTime.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/InitializationTime2.0.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/InitializationTime2.0.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/NLRtest.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/NERtest.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/Temp1.py" beforeDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/TestIDP2.0.py" beforeDir="false" afterPath="F:/IDP mitigation/Performance_test/TestIDPFilter_name800_filteredwords.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/generate_test_sentences.py" beforeDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/test_idp_filter.py" beforeDir="false" />
+      <change beforePath="F:/IDP mitigation/Performance_test/trymeaningfulsentences.py" beforeDir="false" />
+      <change beforePath="F:/IDP mitigation/README.md" beforeDir="false" afterPath="F:/IDP mitigation/README.md" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/app/app.py" beforeDir="false" afterPath="F:/IDP mitigation/app/app.py" afterDir="false" />
+      <change beforePath="F:/IDP mitigation/datasets/name.csv" beforeDir="false" afterPath="F:/IDP mitigation/datasets/name.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +66,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -57,35 +97,15 @@
       <recent name="F:\IDP mitigation\datasets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IDP mitigation\Imagemerge" />
       <recent name="F:\IDP mitigation\Performance_test" />
       <recent name="F:\IDP mitigation\datasets" />
       <recent name="F:\IDP mitigation\" />
       <recent name="F:\IDP mitigation\app\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestIDP2.0">
-    <configuration name="Generate_test_sentence2.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="IDP mitigation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/Generate_test_sentence2.0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="InitializationTime (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Timecost_kmp (1)">
+    <configuration name="InitializationTime" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NLRtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="InitializationTime2.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/NLRtest.py" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/InitializationTime2.0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIDP2.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Sentencetimecostfinal_Flashtext" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +159,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/TestIDP2.0.py" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/Sentencetimecostfinal_Flashtext.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_idp_filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Timecost_kmp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IDP mitigation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +180,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/test_idp_filter.py" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/Performance_test/Timecost_kmp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Timecost_kmp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IDP mitigation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/Performance_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:\IDP mitigation\Performance_test\Timecost_kmp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IDP mitigation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/IDP mitigation/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/IDP mitigation/app/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TestIDP2.0" />
-        <item itemvalue="Python.NLRtest" />
-        <item itemvalue="Python.InitializationTime (1)" />
-        <item itemvalue="Python.test_idp_filter" />
-        <item itemvalue="Python.Generate_test_sentence2.0" />
+        <item itemvalue="Python.Timecost_kmp (1)" />
+        <item itemvalue="Python.InitializationTime2.0" />
+        <item itemvalue="Python.Sentencetimecostfinal_Flashtext" />
+        <item itemvalue="Python.InitializationTime" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705510804372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test performance">
+      <created>1705511426763</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705511426763</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -235,7 +304,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

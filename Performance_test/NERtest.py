@@ -57,7 +57,7 @@ def main():
         input_file = f"sentences_{i}.txt"
         output_file = f"NLPfilteredsentence_{i}.txt"
         _, filtered_sentences, cumulative_times, word_counts = filter_sentences(input_file, filter_categories)
-        plot_cumulative_times(cumulative_times, f"Cumulative Filtering Time for {input_file}")
+       # plot_cumulative_times(cumulative_times, f"Cumulative Filtering Time for {input_file}")
         write_output(output_file, filtered_sentences, word_counts)
 
 if __name__ == "__main__":
